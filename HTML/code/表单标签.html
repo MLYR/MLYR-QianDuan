@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表单标签示例</title>
+</head>
+<body>
+
+<h1>用户调查表单</h1>
+
+<form action="/submit" method="post">
+    <label for="name">姓名:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">邮箱:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label>性别:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">男</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">女</label><br>
+
+    <label for="feedback">反馈:</label>
+    <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea><br>
+
+    <label for="color">最喜欢的颜色:</label>
+    <input list="colors" id="color" name="color">
+    <datalist id="colors">
+        <option value="红色">
+        <option value="蓝色">
+        <option value="绿色">
+    </datalist><br>
+
+    <button type="submit">提交</button>
+</form>
+
+</body>
+</html>
